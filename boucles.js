@@ -174,7 +174,7 @@ for(let i=0 ; i < 10 ; i++) {
             console.log(i);
         }
     } else { 
-        console.log(i):
+        console.log(i);
     }
         }
     
@@ -292,7 +292,13 @@ for(let i=1 ; i<=6 ; i++) {
 
 // Exercice 12 : en prenant des dés à 20 faces, combien de résultats différents (sans doublon) peut-on afficher ? (Autrement dit : adapter le code précédent pour compter les résultats au lieu de les afficher)
 console.log("Exercice 12");
-// TODO
+for(let i=1 ; i<=20 ; i++) {
+    for(let j=1 ; j<=20 ; j++) {
+   if(i<=j) {
+    console.log(i,j);
+   }
+    }
+}
 
 // Exercice 13 : afficher la table de multiplication de 1 (de 1 à 9):
 // 1x1 = 1
@@ -305,7 +311,13 @@ console.log("Exercice 12");
 // 1x8 = 8
 // 1x9 = 9
 console.log("Exercice 13");
-// TODO
+for(let i=1 ; i<=1 ; i++) {
+    for(let j=1 ; j<=9 ; j++) {
+   if(i<=j) {
+    console.log(i,"x",j, "=", (i*j));
+   }
+    }
+}
 
 // Exercice 14 : que faut-il modifier du code précédent pour obtenir la table de 2 :
 // 2x1 = 2
@@ -318,7 +330,13 @@ console.log("Exercice 13");
 // 2x8 = 16
 // 2x9 = 18
 console.log("Exercice 14");
-// TODO
+for(let i=1 ; i<=2 ; i++) {
+    for(let j=1 ; j<=9 ; j++) {
+   if(i<=j) {
+    console.log(i,"x",j, "=", (i*j));
+   }
+    }
+}
 
 // Exercice 15 : comment généraliser pour afficher toutes les tables de multiplication de 1 à 9 :
 // 1x1 = 1
@@ -330,11 +348,21 @@ console.log("Exercice 14");
 // 9x8 = 72
 // 9x9 = 81
 console.log("Exercice 15");
-// TODO
+for(let i=2 ; i<=9 ; i++) {
+    for(let j=1 ; j<=9 ; j++) {
+   if(i<=j) {
+    console.log(i,"x",j, "=", (i*j));
+   }
+    }
+}
 
 // Exercice 16 : calculer 1+2+3+4+...+99+100. (Vous devriez trouver 5050)
 console.log("Exercice 16");
-// TODO
+let somme = 0;
+for(let i=1 ; i<=100; i++) {
+    somme += i;
+    console.log(i);
+}
 
 // Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
 console.log("Exercice 17");
